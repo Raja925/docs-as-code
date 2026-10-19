@@ -1,0 +1,80 @@
+site_name: Docs-as-Code Starter Kit
+site_description: Production-ready documentation infrastructure with CI/CD, linting, and automated quality checks.
+site_author: Raja Antony Mandal
+site_url: https://raja925.github.io/docs-as-code-starter/
+
+repo_name: raja925/docs-as-code-starter
+repo_url: https://github.com/raja925/docs-as-code-starter
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.action.edit
+    - content.code.copy
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Quick Start: getting-started/quickstart.md
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+  - Guides:
+    - Writing Style Guide: guides/style-guide.md
+    - Docs-as-Code Workflow: guides/workflow.md
+    - Terminology Management: guides/terminology.md
+  - Reference:
+    - Linting Rules: reference/linting-rules.md
+    - CI/CD Pipeline: reference/cicd.md
+    - Pre-commit Hooks: reference/pre-commit.md
+  - API:
+    - Script Reference: api/scripts.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/raja925
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/raja-antony
+
+copyright: Copyright &copy; 2026 Raja Antony Mandal

@@ -1,0 +1,9 @@
+# Docs site
+mkdocs==1.6.0
+mkdocs-material==9.5.18
+# Linting scripts
+pyyaml==6.0.1
+requests==2.31.0
+
+# Pre-commit
+pre-commit==3.7.1

@@ -1,0 +1,23 @@
+lint:
+  stale_threshold_days: 90
+  min_word_count: 50
+  require_frontmatter:
+    - title
+    - description
+    - last_updated
+    - status
+  valid_statuses:
+    - draft
+    - review
+    - stable
+    - deprecated
+  heading_max_depth: 3
+
+cross_refs:
+  check_internal: true
+  check_anchors: true
+  exclude_patterns:
+    - "*.png"
+    - "*.jpg"
+    - "*.gif"
+    - "*.svg"

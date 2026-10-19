@@ -1,0 +1,45 @@
+repos:
+  # Standard file hygiene
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  # Docs linting (frontmatter, headings, word count, stale detection)
+  - repo: local
+    hooks:
+      - id: lint-docs
+        name: Lint docs
+        language: python
+        entry: python scripts/lint_docs.py --all
+        additional_dependencies: [pyyaml]
+        pass_filenames: false
+        types: [markdown]
+
+  # Terminology enforcement
+  - repo: local
+    hooks:
+      - id: check-terminology
+        name: Check terminology
+        language: python
+        entry: python scripts/check_terminology.py --all
+        additional_dependencies: []
+        pass_filenames: false
+        types: [markdown]
+
+  # Internal link checker (fast — external links checked in CI only)
+  - repo: local
+    hooks:
+      - id: check-links-internal
+        name: Check internal links
+        language: python
+        entry: python scripts/check_links.py --internal --all
+        additional_dependencies: []
+        pass_filenames: false
+        types: [markdown]

@@ -1,0 +1,52 @@
+{
+  "terms": [
+    {
+      "approved": "sign in",
+      "banned": ["login", "log in", "log-in", "signin"],
+      "note": "Verb form: 'sign in'. Adjective form: 'sign-in page'. Never 'login' as a verb.",
+      "case_sensitive": false
+    },
+    {
+      "approved": "sign out",
+      "banned": ["logout", "log out", "log-out", "signout"],
+      "note": "Verb form: 'sign out'. Adjective form: 'sign-out'.",
+      "case_sensitive": false
+    },
+    {
+      "approved": "API key",
+      "banned": ["api key", "API Key", "apikey", "api_key", "access key"],
+      "note": "Two words: 'API' uppercase, 'key' lowercase.",
+      "case_sensitive": true
+    },
+    {
+      "approved": "GitHub Actions",
+      "banned": ["Github Actions", "github actions", "GH Actions"],
+      "note": "Both words capitalized: 'GitHub Actions'.",
+      "case_sensitive": true
+    },
+    {
+      "approved": "pre-commit",
+      "banned": ["precommit", "pre commit"],
+      "note": "Always hyphenated: 'pre-commit'.",
+      "case_sensitive": false
+    },
+    {
+      "approved": "docs-as-code",
+      "banned": ["docs as code", "documentation as code", "DocsAsCode"],
+      "note": "Hyphenated when used as a compound modifier: 'docs-as-code pipeline'.",
+      "case_sensitive": false
+    },
+    {
+      "approved": "Markdown",
+      "banned": ["markdown", "mark down", "markDown"],
+      "note": "Always capitalized: 'Markdown'.",
+      "case_sensitive": true
+    },
+    {
+      "approved": "pull request",
+      "banned": ["pull-request", "pullrequest"],
+      "note": "Two words, no hyphen: 'pull request'. Abbreviation 'PR' is acceptable.",
+      "case_sensitive": false
+    }
+  ]
+}
