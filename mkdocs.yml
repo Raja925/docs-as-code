@@ -51,6 +51,8 @@ nav:
     - Pre-commit Hooks: reference/pre-commit.md
   - API:
     - Script Reference: api/scripts.md
+  - Samples:
+    - NeMo Ecosystem Map: samples/nemo-ecosystem-map.md
 
 plugins:
   - search
