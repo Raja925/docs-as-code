@@ -1,10 +1,10 @@
 site_name: Docs-as-Code Starter Kit
 site_description: Production-ready documentation infrastructure with CI/CD, linting, and automated quality checks.
 site_author: Raja Antony Mandal
-site_url: https://raja925.github.io/docs-as-code-starter/
+site_url: https://raja925.github.io/docs-as-code/
 
-repo_name: raja925/docs-as-code-starter
-repo_url: https://github.com/raja925/docs-as-code-starter
+repo_name: Raja925/docs-as-code
+repo_url: https://github.com/Raja925/docs-as-code
 edit_uri: edit/main/docs/
 
 theme:
