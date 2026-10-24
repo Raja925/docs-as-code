@@ -54,6 +54,7 @@ nav:
   - Samples:
     - NeMo Ecosystem Map: samples/nemo-ecosystem-map.md
     - NIM Troubleshooting Guide: samples/nim-troubleshooting-guide.md
+    - TensorRT-LLM And vLLM: samples/tensorrt-llm-setup-and-vllm.md
 
 plugins:
   - search
