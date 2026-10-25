@@ -1,5 +1,5 @@
-site_name: Docs-as-Code Starter Kit
-site_description: Production-ready documentation infrastructure with CI/CD, linting, and automated quality checks.
+site_name: Raja Antony Mandal | Technical Writing
+site_description: Portfolio of a documentation engineer. Independent technical writing samples on AI infrastructure and a docs-as-code pipeline with automated quality checks.
 site_author: Raja Antony Mandal
 site_url: https://raja925.github.io/docs-as-code/
 
@@ -10,18 +10,18 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.sections
@@ -37,6 +37,12 @@ theme:
 
 nav:
   - Home: index.md
+  - Samples:
+    - Overview: samples/index.md
+    - NeMo Ecosystem Map: samples/nemo-ecosystem-map.md
+    - NIM Troubleshooting Guide: samples/nim-troubleshooting-guide.md
+    - TensorRT-LLM And vLLM: samples/tensorrt-llm-setup-and-vllm.md
+  - Starter Kit: starter-kit.md
   - Getting Started:
     - Quick Start: getting-started/quickstart.md
     - Installation: getting-started/installation.md
@@ -51,10 +57,9 @@ nav:
     - Pre-commit Hooks: reference/pre-commit.md
   - API:
     - Script Reference: api/scripts.md
-  - Samples:
-    - NeMo Ecosystem Map: samples/nemo-ecosystem-map.md
-    - NIM Troubleshooting Guide: samples/nim-troubleshooting-guide.md
-    - TensorRT-LLM And vLLM: samples/tensorrt-llm-setup-and-vllm.md
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search

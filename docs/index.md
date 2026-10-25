@@ -1,83 +1,76 @@
 ---
-title: Docs-as-Code Starter Kit
-description: Production-ready documentation infrastructure for engineering teams. Drop this into any repo and get CI/CD, automated linting, and quality checks on day one.
-last_updated: 2026-10-18
+title: Raja Antony Mandal, Technical Writing Portfolio
+description: Portfolio of Raja Antony Mandal, a documentation engineer. Independent technical writing samples on AI infrastructure, plus a docs-as-code pipeline that keeps documentation correct.
+last_updated: 2026-10-24
 status: stable
+hide:
+  - navigation
+  - toc
 ---
 
-# Docs-as-Code Starter Kit
+<!-- terminology: ignore-next-line -->
+<div class="hero" markdown>
 
-A production-ready documentation infrastructure template for engineering teams. Clone this repo, connect it to GitHub Actions, and your docs pipeline is live in under 30 minutes.
+# Documentation That Works The First Time
 
-## What's included
+<p class="hero-lead">I'm Raja Antony Mandal, a documentation engineer. I write task-first technical documentation, then build the pipelines that keep it accurate: linting, terminology control, and automated checks on every change.</p>
 
-| Component | What it does |
-|---|---|
-| **MkDocs + Material** | Docs site with search, dark mode, versioning |
-| **GitHub Actions CI/CD** | Auto-deploys to GitHub Pages on every merge to `main` |
-| **Pre-commit hooks** | Catches broken links, stale content, and terminology drift before a PR is opened |
-| **Python lint scripts** | AST-level validation of cross-references, frontmatter, and heading structure |
-| **Terminology registry** | Single source of truth for approved terms; flags unapproved variants automatically |
-| **Stale content detector** | Flags pages not updated within a configurable threshold (default: 90 days) |
+[View Writing Samples](samples/index.md){ .md-button .md-button--primary }
+[See The Docs-as-Code Kit](starter-kit.md){ .md-button }
 
-## Why this exists
+</div>
 
-Documentation debt accumulates the same way technical debt does — invisibly, until it breaks something. A broken link in a getting-started guide costs a developer 20 minutes. A stale API reference costs a support ticket. Terminology drift across 50 documents costs onboarding clarity for every new hire.
+## Writing Samples
 
-This kit makes quality checks automatic. Writers catch issues in their editor before committing. CI catches anything that slips through. Nothing lands in `main` with a broken cross-reference or an unapproved term.
+Independent samples on AI infrastructure. Each one starts from the reader's goal, uses numbered steps with a verify step, and ends with open questions for the product team.
 
-## Quick start
+<!-- terminology: ignore-next-line -->
+<div class="grid cards" markdown>
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/raja925/docs-as-code-starter.git
-cd docs-as-code-starter
+- **[NeMo Ecosystem Map](samples/nemo-ecosystem-map.md)**
 
-# 2. Install dependencies
-pip install -r requirements.txt
-pre-commit install
+    Matches each goal to the right library, decodes retired product names, and flags a claim that needs confirmation.
 
-# 3. Serve locally
-mkdocs serve
-```
+- **[NIM Troubleshooting Guide](samples/nim-troubleshooting-guide.md)**
 
-Open `http://127.0.0.1:8000` — your docs site is live.
+    Merges troubleshooting advice from three separate microservice pages into one symptom-first guide, and lists where the sources disagree.
 
-## How the pipeline works
+- **[TensorRT-LLM Setup And vLLM Comparison](samples/tensorrt-llm-setup-and-vllm.md)**
 
-```
-Writer edits Markdown
-       ↓
-pre-commit hooks run locally
-  · broken links
-  · missing frontmatter
-  · unapproved terminology
-  · stale content flag
-       ↓
-Git push → PR opened
-       ↓
-GitHub Actions CI
-  · full lint suite
-  · mkdocs build check
-  · cross-reference validation
-       ↓
-Merge to main
-       ↓
-GitHub Actions CD
-  · mkdocs build
-  · deploy to GitHub Pages
-```
+    Shows the current install and serve steps and translates outdated engine-build instructions still found in tutorials.
 
-!!! tip "Zero broken links in production"
-    The pre-commit hook catches broken internal links before they ever reach a PR. The CI job catches broken external links. Between the two, nothing slips through.
+</div>
 
-## Designed for teams
+!!! note "Independent Work"
+    These samples aren't affiliated with or endorsed by the companies whose products they describe. Each page cites its public sources and lists what hasn't been verified.
 
-This kit is built for teams where:
+## What I Do
 
-- Docs live in the same repo as code
-- Multiple writers contribute across feature branches
-- Release cycles are fast and docs need to ship with the code
-- Someone needs to prove documentation ROI with metrics
+<!-- terminology: ignore-next-line -->
+<div class="grid cards two-col" markdown>
 
-See the [Docs-as-Code Workflow guide](guides/workflow.md) for team setup, branching strategy, and review process.
+- **Write For Tasks**
+
+    Goal-first tables, numbered steps, and a verify step after each procedure, so readers can tell whether it worked.
+
+- **Verify Against Sources**
+
+    Compare documentation with the product and with current release notes. Flag conflicts as open questions instead of guessing.
+
+- **Build The Pipeline**
+
+    Docs live in Git, and a linter, a terminology registry, and CI checks run on every pull request.
+
+- **Work In Manufacturing**
+
+    Write procedures for a battery cell manufacturing environment, where an unclear step has real consequences.
+
+</div>
+
+## How This Site Is Built
+
+This site is itself a working docs-as-code project. Every page has required frontmatter, a heading-depth limit, and approved terminology, and a pull request can't merge until the checks pass. Refer to the [Docs-as-Code Starter Kit](starter-kit.md) for the pipeline and the [Writing Style Guide](guides/style-guide.md) for the rules.
+
+## Contact
+
+Find me on [LinkedIn](https://linkedin.com/in/raja-antony) or [GitHub](https://github.com/raja925).

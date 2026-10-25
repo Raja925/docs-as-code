@@ -18,7 +18,7 @@ Get from zero to a live docs site with full CI/CD and linting in under 30 minute
 ## Step 1 — Clone and install
 
 ```bash
-git clone https://github.com/raja925/docs-as-code-starter.git my-docs
+git clone https://github.com/Raja925/docs-as-code.git my-docs
 cd my-docs
 pip install -r requirements.txt
 ```
